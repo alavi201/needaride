@@ -1,0 +1,335 @@
+﻿/* CSS Document */
+body {
+	background: #5CBAD6 url(../img/body_bg.jpg) top center repeat-x;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #135181;
+	height: 100%;
+}
+#container{
+	width:1000px;
+	height:100%;
+	margin:0 auto;
+	padding:0 24px;
+	min-height:501px;
+}
+#MessageSection{
+	width:100%;
+	height:25%;
+	margin-top:45px;
+	padding:0;
+
+}
+
+#header{
+	height:100px;
+	width:100%;
+	border-top-style:solid;
+	border-color:#464646;
+	border-width:5px;
+	padding-top:5px;
+}
+
+#logo{
+	height:100%;
+	width:100px;
+	float:left;
+}
+
+#login-link{
+	float:right;
+	height:100%;
+	margin-right:10px;
+}
+#login-link a{
+	text-decoration:none;
+	color:#494949;
+	font-size:18px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	
+}
+#login-link input{
+	width:200px;
+	height:24px;
+	border-radius:5px;
+	border-style:solid;
+	border-color:#acacac;
+	font-size:24px;
+	padding-left:5px;
+	padding-right:5px;
+
+}
+#login-link input[type=submit]{
+	float:none;
+	height:28px;
+	width:140px;
+	background-color:#34780f;
+	color:#f8f8f8;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+}
+
+
+#ticker {
+    height: 300px;
+    overflow: hidden;
+}
+
+#ticker li {
+    height: 330mm;
+    color:#34780f;
+    list-style:none;
+    font-style:italic;}
+
+
+#register{
+	width:380px;
+	height:100%;
+	float:left;
+	padding-left:20px;
+}
+
+#signup input{
+	margin-bottom:10px;
+}
+#signup{
+s	font-size:18px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	/*margin-top:20px;*/
+}
+#signup input[type=text], #signup [type=email], #signup [type=password], #signup [type=date]{
+	width:300px;
+	height:24px;
+	border-radius:5px;
+	border-style:solid;
+	border-color:#acacac;
+	font-size:20px;
+	padding-left:5px;
+	padding-right:5px;
+}
+#signup input[type=submit]{
+	float:right;
+	margin-right:70px;
+	height:28px;
+	width:140px;
+	background-color:#34780f;
+	color:#f8f8f8;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+}
+.footer-container {
+	background: url(../img/bg_footer_container_hp.png) repeat-x;
+	padding-bottom: 0px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	clear: both;
+	min-width: 1024px;
+	margin-top:30px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:-1;
+}
+
+.footer {
+	/*padding-left: 50px;
+	padding-right: 50px;*/
+	background: url(../img/bg_footer_hp.png) no-repeat top center;
+	text-align: left;
+	clear: both;
+	color: #fff;
+	padding: 202px 10px 15px 10px;
+	font-size: 9px;
+	margin: 0px auto;
+	width: 1048px;
+	overflow: hidden;
+	border-bottom-style:solid;
+	border-color:#464646;
+	border-width:5px;	 
+}
+
+
+#footer-left{
+	width:600px;
+	height:30px;
+	float:left;
+	text-align:center;	
+	color:#aeaeae;
+}
+#footer-left ul{
+	list-style:none;
+	font-size:13px;
+	font-family:Nyala;
+	line-height:20px;
+	font-weight: bold ;
+}
+#footer-left ul li{
+	float:left;
+	margin:0 10px;
+}
+#footer-left ul li a{
+	text-decoration:none;
+	color:#aeaeae;
+}
+#footer-right{
+	float: right;
+	width: 500px;
+	text-align:center ;
+}
+#footer-right a {
+	color: #FFFFFF;
+	padding-left: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#travel-search{
+	height:60px;
+	width:100%;
+	
+}
+#travel-search form{
+	padding:0 10px;
+	z-index:-1;
+	padding-top: 25px;
+	padding-right: 20px;
+	padding-left: 560px;	
+}
+#travel-search input[type=text]{
+	border-radius:5px;
+	border-style:solid;
+	border-color:#acacac;
+	height:30px;
+	width:300px;
+	padding:0 5px;
+	z-index:-1;
+}
+#travel-search input[type=date]{
+	height:30px;
+	border-radius:5px;
+	border-style:solid;
+	border-color:#acacac;
+	z-index:-1;
+}
+#travel-search input[type=submit]{
+
+	height:35px;
+	width:100px;
+	background-color:#34780f;
+	color:#f8f8f8;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	z-index:-1;
+}
+#travel-post{
+	height:500px;
+	width:100%;
+}
+#travel-post form{
+	text-align:center;
+}
+#travel-post input[type=text], #travel-post textarea{
+	border-radius:5px;
+	border-style:solid;
+	border-color:#acacac;
+	width:400px;
+	height:50px;
+	margin:10px;
+	font-size:18px;
+	padding:0 10px;
+}
+#travel-post input[type=date]{
+	border-radius:5px;
+	border-style:solid;
+	border-color:#acacac;
+	width:255px;
+	height:50px;
+	font-size:18px;
+	padding:0 10px;
+	color:#ababab;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#travel-post input[placeholder=Time], #travel-post input[placeholder=Capacity]{
+	width:255px;
+}
+#travel-post textarea{
+	border-radius:5px;
+	border-style:solid;
+	border-color:#acacac;
+	max-width:850px;
+	max-height:130px;
+	width:850px;
+	height:130px;
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#travel-post input[type=submit]{
+	width:860px;
+	height:50px;
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#2467a6;
+	color:#f8f8f8;
+}
+
+/*#header nav{
+	width:550px;
+	height:50px;
+	float: right;
+	z-index:2147483647;
+}
+#header nav ul{
+	width:100%;
+	height:100%;
+	background-color:#34780f;
+	border-radius:10px;
+	list-style:none;
+}
+#header nav ul li{
+	float:left;
+	margin-right:10px;
+	padding:0 20px;
+	background-color:#34780f;
+}
+
+#header nav ul a{
+	line-height:50px;
+	text-decoration:none;
+	color:#f9f9f9;
+}
+#header nav ul a:hover li{
+	background-color:#3c8c10;
+}*/
+
+
+#profile-info{
+	padding-top:100px;
+	padding-left:20px
+}
+
+#profile-info input[type=text]{
+	width:300px;
+	height:40px;
+	border-radius:5px;
+	border-style:solid;
+	border-color:#acacac;
+	font-size:24px;
+	padding-top:5px;
+	padding-top:5px
+}
+
+#profile-info input[type=submit]{
+	height:30px;
+	width:130px;
+	background-color:#34780f;
+	color:#f8f8f8;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:15px;
+	z-index:-1;
+}
+
+
+

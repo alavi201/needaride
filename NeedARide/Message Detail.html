@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Need A Ride - Inbox</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<style>#Messages li{
+	border:5px gray solid; height:20px;margin-bottom:5px
+}
+
+#Messages a {
+	text-decoration:none;
+	
+}
+input{
+	width:200px;
+	height:40px;
+	border-radius:5px;
+	border-style:solid;
+	border-color:#acacac;
+	font-size:24px;
+	padding-left:5px;
+	padding-right:5px;
+
+}
+input[type=button]{
+	float:none;
+	height:40px;
+	width:140px;
+	background-color:#34780f;
+	color:#f8f8f8;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+}
+
+</style>
+<script>
+$(document).ready(function(){	
+$("#panel").hide();	
+  });
+
+$(document).ready(function(){
+$("#Send").click(function(){$("#Message").append("<p/>Me: "+$('#text').val()+"</p>");
+ $("#panel").hide();});});
+</script>
+
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="logo" style="width: 282px; height: 67%">
+				<img src="img/logo.png">
+			</div><!--End of div logo-->
+			
+			<div id="login-link">
+					<a href= profile.html style="float:right">Welcome, John Doe</a><!--redirects to profile page-->
+			</div><!--End of div login-link-->
+			
+			<nav>
+				<ul>
+					<a href="home.html"><li>Home</li></a>
+					<a href="profile.html"><li>Profile</li></a>
+					<a href="friends.html"><li>Friends</li></a>
+					<a href="inbox.html"><li>Messages</li></a>
+					<a href="index.html"><li>Log out</li></a>
+				</ul>
+			</nav>
+		</div><!--End of div header--><br><br>
+		<p id="Message" style="border:thin black solid;font-size:x-large">Taha: Hey how are you? Which car do you own?</p>
+<div id="panel"><input id="text" type="text"/><input id="Send" type="button" value="Send" />
+<input id="Cancel" type="button" value="Cancel" onclick="$('#panel').slideUp()"/>
+</div>
+<input id="Reply" type="button" value="Reply" onclick="$('#panel').slideToggle()"/>
+
+		
+		<footer>
+			<div id="footer-left">
+				<nav>
+					<ul>
+						<li>Need A Ride &copy; 2013</li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Terms</a></li>
+					</ul>
+				</nav>
+			</div><!--End of div footer-left-->
+			<div id="footer-right">
+			</div><!--End of div footer-right-->
+			<br><br><br><br>
+		</footer>
+	</div><!--End of div container-->
+</body>
+</html>

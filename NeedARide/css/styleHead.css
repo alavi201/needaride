@@ -1,0 +1,57 @@
+﻿.navigation {
+	background: url(../img/navigations/navigation.png) top left repeat-x;
+	height: 100px;
+	border-radius:5px;
+	overflow: hidden;
+	display: block;
+	float: left;
+	width: 100%;
+	}
+	.navigation * {
+	padding:0;
+	margin:0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight:bold ;
+	text-transform: uppercase;
+	color: #fffff;
+	}
+	.navigation ul {
+	display: block;
+	float: left;
+	padding: 10px 0 0 0;
+	margin: 37px 0 0 20px;
+	}
+	.navigation ul li {
+	list-style: none;
+	float: left;
+	margin: 0 0 0 0;
+	}
+	
+.navigation ul li a {
+	background: url(../img/navigations/nav_right_IE6.png) top right no-repeat !important;
+ 	background: url('../img/navigations/nav_right.png') no-repeat right top !important;
+	display: block;
+	padding: 0 13px 0 0;
+	color: #578ba0;
+	text-decoration: none
+}
+ .navigation ul li.selected a,
+ .navigation ul li.hover a {
+	 background: url(../img/navigations/nav_selected_right.png) top right no-repeat !important;
+	 background: url(../img/navigations/nav_selected_right_IE6.png) top right no-repeat;
+	 color: #578ba0;
+	 }
+
+ .navigation ul li a span {
+	 background: url(../img/navigations/nav_left.png) top left no-repeat !important;
+	 background: url(../img/navigations/nav_left_IE6.png) top left no-repeat;
+	 display: block;
+	 padding: 15px 10px 10px 23px;
+	 }
+ .navigation ul li.selected a span,
+ .navigation ul li.hover a span {
+	 background: url(../img/navigations/nav_selected_left.png) top left no-repeat !important;
+	 background: url(../img/navigations/nav_selected_left_IE6.png) top left no-repeat;
+	 }
+

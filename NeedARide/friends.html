@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Need A Ride - Friends</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script>
+$(document).ready(function(){$("#deta").click(function(){$("#Details").slideToggle();})});
+$(document).ready(function(){	
+$("#Details").hide();	
+  });
+$(document).ready(function(){$("#deta2").click(function(){$("#Details2").slideToggle();})});
+$(document).ready(function(){	
+$("#Details2").hide();	
+  });
+
+
+
+</script>
+<style>
+input{
+	width:200px;
+	height:40px;
+	border-radius:5px;
+	border-style:solid;
+	border-color:#acacac;
+	font-size:24px;
+	padding-left:5px;
+	padding-right:5px;
+
+}
+input[type=button]{
+	float:none;
+	height:40px;
+	width:140px;
+	background-color:#34780f;
+	color:#f8f8f8;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+}
+</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="logo" style="width: 282px; height: 67%">
+				<img src="img/logo.png">
+			</div><!--End of div logo-->
+			
+			<div id="login-link">
+					<a href="profile.html" style="float:right">Welcome, John Doe</a><!--redirects to profile page-->
+			</div><!--End of div login-link-->
+			
+			<nav>
+				<ul>
+					<a href="home.html"><li>Home</li></a>
+					<a href="profile.html"><li>Profile</li></a>
+					<a href="friends.html"><li>Friends</li></a>
+					<a href="inbox.html"><li>Messages</li></a>
+					<a href="index.html"><li>Log out</li></a>
+				</ul>
+			</nav>
+		</div><!--End of div header-->
+		<div id="travel-search">
+			<form >
+				<input type="text" placeholder="Search Friends" required>
+				<input type="submit" value="Search">
+			</form>
+		</div>
+
+		<ul style="list-style:none">
+<li id="first">
+&nbsp;<div id="profile"><a href="#"><img id="deta" height="125" src="img/profile.jpg" width="200" /></a><input type="button" value="Remove" onclick="$('#first').remove()"><p>Ali Alavi</p></div>
+
+
+<div id="Details" style="position:relative; left: 41px; top: -1px; width: 405px;"><p>D.O.B: 28-12-1992</p><p>Interests: Football</p><p>Trips: 6</p></div>
+</li>
+<li id="second">
+<div id="profile1"><a href="#"><img id="deta2" height="125" src="img/profile.jpg" width="200" /></a><input type="button" value="Remove" onclick="$('#second').remove()"><p>Haris Irfan</p></div>
+
+<div id="Details2" style="position:relative; left: 41px; top: -1px; width: 405px;"><p>D.O.B: 28-12-1992</p><p>Interests: Classic Cars</p><p>Trips: 8</p></div>
+</li>
+
+</ul>
+		
+		<footer>
+			<div id="footer-left">
+				<nav>
+					<ul>
+						<li>Need A Ride &copy; 2013</li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Terms</a></li>
+					</ul>
+				</nav>
+			</div><!--End of div footer-left-->
+			<div id="footer-right">
+			</div><!--End of div footer-right-->
+			<br><br><br><br>
+		</footer>
+	</div><!--End of div container-->
+</body>
+</html>
